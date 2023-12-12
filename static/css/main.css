@@ -1,0 +1,225 @@
+body {
+  background: #ffffff;
+  color: #111111;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.4em;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e5e5; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.iphone {
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  height: 610px;
+  box-shadow: 0 0 20px #e2e2e2;
+  border-radius: 30px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+
+.iphone form {
+  position: absolute;
+  bottom: 20px;
+  width: 260px;
+  left: 20px;
+}
+
+.message-box {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 260px;
+  height: 380px;
+  background: white;
+  border-radius: 10px;
+  text-align: left;
+  padding: 4px;
+  overflow: auto;
+}
+
+.message-cloud {
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 6px;
+  font-family: Tahoma;
+  opacity: 0.8;
+}
+
+.iphone form textarea {
+  width: 260px;
+  height: 80px;
+  outline: none;
+  border-radius: 10px;
+  padding: 4px;
+  resize: none;
+}
+
+.iphone form button {
+  width: 260px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.connection-open-message {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 100;
+  color: #fff;
+  font-weight: bold;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow-y: auto;
+}
+
+.screen.first {
+  background-color: #ff9ff3;
+}
+
+.screen.second {
+  background-color: #54a0ff;
+}
+
+.brove {
+  width: 150px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  left: 75px;
+  border-radius: 0 0 20px 20px;
+}
+
+.speaker {
+  width: 60px;
+  height: 5px;
+  background: #d2d2d2;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+pre::-webkit-scrollbar,
+code::-webkit-scrollbar,
+details::-webkit-scrollbar,
+summary::-webkit-scrollbar {
+  height: 2px;
+}
+
+.base {
+  width: 100%;
+  height: auto;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.ajax-icon {
+  height: 48px;
+  width: 48px;
+  margin: 10px auto;
+  display: block;
+}
+
+.form {
+  background: #f8f8f8;
+  border-radius: 16px;
+  border: 1px #cdcdcd solid;
+  display: block;
+  margin: 10px auto;
+  width: 350px;
+  text-align: center;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.form button {
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.form-label {
+  margin-top: 10px;
+}
+
+.form-input {
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.form input[type="file"] {
+  cursor: pointer;
+  font-size: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form input[type="checkbox"] {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.lang-option {
+  margin-left: 7px;
+  margin-right: 1px;
+  font-size: 14px;
+}
+
+.login-form {
+    width: 250px;
+    height: auto;
+    margin: 1em auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 5px;
+    background: #f8f8f8;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    color: #111111;
+}
+
+.elm-error {
+  box-shadow: inset 0 0 4px red;
+}
+
+@media only screen and (min-width: 700px) {
+  .base {
+    width: 700px;
+    font-size: 1.2em;
+  }
+}
