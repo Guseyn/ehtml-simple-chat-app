@@ -1,5 +1,4 @@
 # Simple [EHTML](https://github.com/Guseyn/EHTML) Chat App
-Simple Chat App Using EHTML
 
 ```bash
 git clone git@github.com:Guseyn/ehtml-simple-chat-app.git
