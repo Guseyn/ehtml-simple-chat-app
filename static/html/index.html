@@ -63,14 +63,16 @@
               data-socket="firstSocket"
               onclick="
                 this.form.submit(this)
-                mapToTemplate('#message-1', {
-                  userName: 'Alice',
-                  userColor: '#ff9ff3',
-                  messageText: document.querySelector('#message-text-1').value
-                })
-                changeValueOf('#message-text-1', '')
-                const messageBox = document.getElementById('message-box-1')
-                messageBox.scrollTop = messageBox.scrollHeight
+                if (this.form.isValid) {
+                  mapToTemplate('#message-1', {
+                    userName: 'Alice',
+                    userColor: '#ff9ff3',
+                    messageText: document.querySelector('#message-text-1').value
+                  })
+                  changeValueOf('#message-text-1', '')
+                  const messageBox = document.getElementById('message-box-1')
+                  messageBox.scrollTop = messageBox.scrollHeight
+                }
               ">
               SEND
             </button>
@@ -126,14 +128,16 @@
               data-socket="secondSocket"
               onclick="
                 this.form.submit(this)
-                mapToTemplate('#message-2', {
-                  userName: 'Bob',
-                  userColor: '#54a0ff',
-                  messageText: document.querySelector('#message-text-2').value
-                })
-                changeValueOf('#message-text-2', '')
-                const messageBox = document.getElementById('message-box-2')
-                messageBox.scrollTop = messageBox.scrollHeight
+                if (this.form.isValid) {
+                  mapToTemplate('#message-2', {
+                    userName: 'Bob',
+                    userColor: '#54a0ff',
+                    messageText: document.querySelector('#message-text-2').value
+                  })
+                  changeValueOf('#message-text-2', '')
+                  const messageBox = document.getElementById('message-box-2')
+                  messageBox.scrollTop = messageBox.scrollHeight
+                }
               ">
               SEND
             </button>
