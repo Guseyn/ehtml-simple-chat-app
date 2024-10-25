@@ -19,7 +19,11 @@
        data-src="ws://localhost:8000" 
        data-socket-name="firstSocket"
        data-actions-on-open-connection="
+          console.log('you can access event on open connection:', event)
           showElms('#connetion-open-message-1')
+        "
+        data-actions-on-close-connection="
+          console.log('you can access event on close connection:', event)
         "
       >
         <div class="iphone">
